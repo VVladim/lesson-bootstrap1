@@ -1,5 +1,62 @@
+
+
+/*@font-face {
+    font-family: "Droid Sans";
+    url('fonts/regular/DroidSans-webfont.woff') format('woff');
+
+
+}*/
+@font-face{
+	font-family: "Droid Sans";
+	src: url('fonts/regular/DroidSans-webfont.eot');
+	src: url('fonts/regular/DroidSans-webfont.eot?iefix') format('eot'),
+	     url('fonts/regular/DroidSans-webfontt.woff') format('woff'),
+	     url('fonts/regular/DroidSans-webfont.ttf') format('truetype'),
+	     url('fonts/regular/DroidSans-webfont.svg#webfont') format('svg');
+       font-weight: normal;
+       font-style: normal;
+}
+@font-face{
+	font-family: "Droid SansBold";
+	src: url('fonts/bold/DroidSans-Bold-webfont.eot');
+	src: url('fonts/bold/DroidSans-Bold-webfont.eot?iefix') format('eot'),
+	     url('fonts/bold/DroidSans-Bold-webfontt.woff') format('woff'),
+	     url('fonts/bold/DroidSans-Bold-webfont.ttf') format('truetype'),
+	     url('fonts/bold/DroidSans-Bold-webfont.svg#webfont') format('svg');
+       font-weight: bold;
+       font-style: normal;
+}
+
+
+body {
+    font-family: "Droid Sans";
+    font-weight: 700;
+}
+  .navbar-nav {
+    float: right;
+    margin: 0;
+}
+.navbar {
+    position: static;
+}
+nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
 .list-item li{
     background: gray;
     height: 10vw;
     padding: 1vw;
+}
+
+.welcome {
+  min-width: 100%;
+  min-height: 100vh;
+  background: lightgray;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border-color: none;
 }
