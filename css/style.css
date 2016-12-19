@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Droid Sans";
+    src: url('fonts/regular/DroidSans-webfont.eot');
+    src: url('fonts/regular/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/regular/DroidSans-webfont.woff') format('woff'),
+         url('fonts/regular/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/regular/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "Droid Sans";
+    src: url('fonts/bold/DroidSans-Bold-webfont.eot');
+    src: url('fonts/bold/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bold/DroidSans-Bold-webfont.woff') format('woff'),
+         url('fonts/bold/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/bold/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+html,
+body {
+    font-family: "Droid Sans";
+    font-weight: 700;
+    font-size: 22px
+    margin: 0;
+    padding: 0;
+}
+.welcome {
+   width: auto;
+   height: 100vh;
+}
+ .nav-pills {
+    background: transparent;
+    float: right;
+}
+ header h1 {
+    background: transparent;
+    float: left;
+    margin: 0;
+}
+.nav-pills li a{
+    background: transparent;
+}
+header {
+    background: lightgray;
+}
+.logo {
+    vertical-align: top;
+}
+.welcome {
+    /*position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;*/
+    background: url(bg/daisy-stock-poster.jpg) no-repeat;
+    /*background-size: cover;*/
+}
+
+.welcome > video {
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100px;
+    width: auto;
+    height: auto;*/
+}
+
+ /*@supports (object-fit: cover) {
+     .welcome > video {
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100px;
+         object-fit: cover;
+     }
+ }*/
+ @media screen and (max-device-width: 800px) {
+    #video-bg > video {
+        display: none;
+        }
+    }
+
+
+
+
+footer {
+    width: 100%;
+    height: 1200px;
+    background: blue;
+  }
