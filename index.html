@@ -20,25 +20,53 @@
     <![endif]-->
   </head>
   <body>
-    <section class="welcome" id="video-bg">
-      <video width="100%" height="auto" preload="auto" autoplay="autoplay"
-        loop="loop" poster="bg/daisy-stock-poster.jpg">
-      </video>
-      <header>
-        <div class="container">
-          <h1><img src="img/logo.png" class="logo"
-            width="140" height="52" alt="logotype"></h1>
-          <ul class="nav nav-pills">
-            <li ><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </header>
+
+     <div class="container-affix" data-spy="affix" data-offset-top="100vh">
+       <div class="container">
+        <h1><img src="img/logo.png" class="logo"
+          width="140" height="52" alt="logotype"></h1>
+        <ul class="nav nav-pills">
+          <li ><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+     <section class="page-top pic-1">
+        <header>
+          <div class="container">
+            <h1><img src="img/logo.png" class="logo"
+              width="140" height="52" alt="logotype"></h1>
+            <ul class="nav nav-pills">
+              <li ><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="title">
+              Welcome To Kramerica&nbspIndustries
+          </div>
+          <a href="#" class="point">v</a>
+
+        </header>
     </section>
     <main>
-      
+      <div class="about">
+        <h2>About</h2>
+        <p>
+          This is Photoshop's version &nbsp;of Lorem Ipsum. Proin gravida
+          nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+          bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+          nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+          amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
+          odio tincidunt auctor a ornare odio. Sed non &nbsp;mauris vitae erat
+          consequat auctor eu in elit.
+       </p>
+     </div>
     </main>
 
 
@@ -46,12 +74,33 @@
 
     <footer>
 
+
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    (function(){
+
+      var cls = ['pic-1','pic-2','pic-3'],
+         section = document.getElementsByTagName('section')[0],
+         i = 1,
+         clsLen = cls.length - 1;
+
+      function bgSlider() {
+         setInterval(function(){
+             section.className = cls[i];
+             i = i == clsLen ? 0 : i + 1;
+         },5000);
+      }
+
+      window.onload = bgSlider;
+
+ })();
+    </script>
+
   </body>
 </html>

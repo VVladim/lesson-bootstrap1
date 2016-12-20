@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Droid Sans";
     src: url('fonts/regular/DroidSans-webfont.eot');
-    src: url('fonts/regular/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/regular/DroidSans-webfont.woff') format('woff'),
-         url('fonts/regular/DroidSans-webfont.ttf') format('truetype'),
-         url('fonts/regular/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    src: url('../fonts/regular/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/regular/DroidSans-webfont.woff') format('woff'),
+         url('../fonts/regular/DroidSans-webfont.ttf') format('truetype'),
+         url('../fonts/regular/DroidSans-webfont.svg#droid_sansregular') format('svg');
     font-weight: 400;
     font-style: normal;
 
 }
 @font-face {
     font-family: "Droid Sans";
-    src: url('fonts/bold/DroidSans-Bold-webfont.eot');
-    src: url('fonts/bold/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/bold/DroidSans-Bold-webfont.woff') format('woff'),
-         url('fonts/bold/DroidSans-Bold-webfont.ttf') format('truetype'),
-         url('fonts/bold/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
+    src: url('../fonts/bold/DroidSans-Bold-webfont.eot');
+    src: url('../fonts/bold/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bold/DroidSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/bold/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/bold/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
     font-weight: 700;
     font-style: normal;
 
@@ -27,75 +27,136 @@
 html,
 body {
     font-family: "Droid Sans";
-    font-weight: 700;
+    font-weight: 400;
     font-size: 22px
     margin: 0;
     padding: 0;
 }
-.welcome {
-   width: auto;
-   height: 100vh;
+body {
+    position: relative;
 }
  .nav-pills {
     background: transparent;
     float: right;
 }
- header h1 {
+ .container h1 {
     background: transparent;
     float: left;
     margin: 0;
 }
-.nav-pills li a{
-    background: transparent;
+.nav-pills li a {
+  display: block;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 25px;
 }
-header {
-    background: lightgray;
+.nav-pills li a:hover {
+    color: #000000;
 }
+
 .logo {
     vertical-align: top;
 }
-.welcome {
-    /*position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 1;*/
-    background: url(bg/daisy-stock-poster.jpg) no-repeat;
-    /*background-size: cover;*/
+.container-affix {
+  padding: 10px 0;
+    width: 100%;
+    background: #2c3e50;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-affix h1 {
+   background: transparent;
+   float: left;
+   margin: 0;
 }
 
-.welcome > video {
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100px;
-    width: auto;
-    height: auto;*/
+
+
+
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  z-index: 2;
+  top: 0;
 }
 
- /*@supports (object-fit: cover) {
-     .welcome > video {
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100px;
-         object-fit: cover;
-     }
- }*/
- @media screen and (max-device-width: 800px) {
-    #video-bg > video {
-        display: none;
-        }
-    }
+.pic-1{
+    background-image: url("../img/background1.jpg");
+}
+.pic-2{
+    background-image: url("../img/background2.jpg");
+}
+.pic-3{
+    background-image: url("../img/background3.jpg");
+}
+section .title {
+    position: absolute;
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    top: 30%;
+}
+section .point {
+    display: inline-block;
+    position: absolute;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px;
+    background: #2ecc71;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    top: 75%;
+    left: 50%;
+    margin-left: -30px;
+    text-decoration: none;
+}
+header .container {
+    background: transparent;
+}
+.container {
+    /*background: #2c3e50;*/
+}
+.header-main {
+    width: 100%;
+    height: 77px;
+    background: #3b485a;
+}
+
+main .about {
+    padding-top: 115vh;
+    background: #34495e;
+}
+.about h2 {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5vh;
+
+}
+.about p {
+    width: 760px;
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
 
 footer {
     width: 100%;
-    height: 1200px;
+    height: 1900px;
     background: blue;
   }
